@@ -6,18 +6,22 @@ values ('Web programiranje',1200.54,'2025-05-16 17:00:01',1);
 insert into smjerovi (naziv) values
 ('Serviser'),('Web dizajn'),('Marketing');
 
-select * from grupe
+insert into smjerovi (naziv) values
+-- 2
+('Serviser'),
+-- 3
+('Web dizajn'),
+-- 4
+('Marketing');
 
 insert into grupe (naziv,smjer)
-
-
 values 
 -- 1
 ('WP8',1),
 -- 2
 ('WP7',1),
 -- 3
-('S1',2)
+('S1',2);
 
 select * from polaznici
 
@@ -53,4 +57,12 @@ insert into polaznici (prezime, ime, email) values
 ('Mandić','Andrea','andrea.mandic.anela@gmail.com'),
 ('Mirković','Milivoje','daky696@gmail.com'),
 ('Andraković','Nenad','nenad.andrak@gmail.com');
+
+select * from clanovi
+
+
+insert into clanovi (grupa,polaznik) values
+(1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10),
+(1,11),(1,12),(1,13),(1,14),(1,15),(1,16),(1,17),(1,18),(1,19),(1,20),
+(1,21),(1,22),(1,23),(1,24),(1,25),(1,26),(1,27),(1,28),(1,29);
 
