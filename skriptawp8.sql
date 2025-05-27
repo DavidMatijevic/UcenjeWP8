@@ -45,11 +45,10 @@ polaznik int not null references polaznici(sifra),
 
 -- Smjerovi
 
+select * from smjerovi
+
 insert into smjerovi (naziv, cijena,datumpokretanja,aktivan)
 values ('Web programiranje',1200.54,'2025-05-16 17:00:01',1);
-
-insert into smjerovi (naziv) values
-('Serviser'),('Web dizajn'),('Marketing');
 
 insert into smjerovi (naziv) values
 -- 2
