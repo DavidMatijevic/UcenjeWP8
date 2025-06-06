@@ -1,9 +1,9 @@
-﻿--USE MASTER
---GO
---DROP DATABASE IF EXISTS VideoIgre
---GO
---CREATE DATABASE VideoIgre
---GO
+﻿USE MASTER
+GO
+DROP DATABASE IF EXISTS VideoIgre
+GO
+CREATE DATABASE VideoIgre
+GO
 
 USE VideoIgre
 
@@ -17,20 +17,23 @@ CREATE TABLE Igra (
 );
 
 CREATE TABLE Platforma (
-    Sifra INT PRIMARY KEY IDENTITY(1,1) REFERENCES Igra(sifra),
-    Naziv VARCHAR(50) NOT NULL,
+    Sifra INT PRIMARY KEY IDENTITY(1,1),
+	Sifra_igre INT not null FOREIGN KEY REFERENCES Igra(sifra),
+    Naziv VARCHAR(50),
     Proizvodjac VARCHAR(50)
 );
 
 CREATE TABLE Razvijac (
-    Sifra INT PRIMARY KEY IDENTITY(1,1) REFERENCES Igra(sifra),
-    Naziv VARCHAR(100) NOT NULL,
+    Sifra INT PRIMARY KEY IDENTITY(1,1),
+	Sifra_igre INT not null FOREIGN KEY REFERENCES Igra(sifra),
+    Naziv VARCHAR(100),
     Sjedište VARCHAR(100)
 );
 
 CREATE TABLE Izdavac (
-    Sifra INT PRIMARY KEY IDENTITY(1,1) REFERENCES Igra(sifra),
-    Naziv VARCHAR(100) NOT NULL,
+    Sifra INT PRIMARY KEY IDENTITY(1,1),
+	Sifra_igre INT not null FOREIGN KEY REFERENCES Igra(sifra),
+    Naziv VARCHAR(100),
     Sjedište VARCHAR(100)
 );
 
@@ -43,16 +46,22 @@ CREATE TABLE Igrac (
 
 
 -- Unos igre
-INSERT INTO Igra (Naziv,Godina_izdanja,Zanr,Opis)
+INSERT INTO Igra (Naziv,Godinaizdanja,Zanr,Opis)
 VALUES
 ('Cyberpunk 2077', 2020, 'RPG', 'Futuristički RPG iz dystopijskog svijeta')
 ;
 
 -- Unos platforme
-INSERT INTO Platforma (Naziv,Proizvodjac)
+INSERT INTO Platforma (Sifra_igre,Naziv,Proizvodjac)
 VALUES
-('PlayStation 5', 'Sony'),
-('Xbox Series X','Microsoft'),
-('PC','Razni');
-
-
+('1','PlayStation 5', 'Sony'),
+('2','Xbox Series X','Microsoft'),
+('3','PC','Razni');
+-- Unos razvijaca
+INSERT INTO Razvijac (Sifra_igre,Naziv, Sjedište) 
+VALUES 
+('1','CD Projekt Red', 'Poljska')
+-- Unos izdavaca
+INSERT INTO  Izdavac (Sifra_igre,Naziv,Sjedište)
+VALUES 
+('1','CD Projekt Red', 'Poljska')
