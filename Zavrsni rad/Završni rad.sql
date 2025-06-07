@@ -1,8 +1,8 @@
 ﻿USE MASTER
 GO
-DROP DATABASE IF EXISTS VideoIgre
+DROP DATABASE IF EXISTS VideoIgreM
 GO
-CREATE DATABASE VideoIgre
+CREATE DATABASE VideoIgreM
 GO
 
 USE VideoIgre
@@ -54,14 +54,15 @@ VALUES
 -- Unos platforme
 INSERT INTO Platforma (Sifra_igre,Naziv,Proizvodjac)
 VALUES
-('1','PlayStation 5', 'Sony'),
-('2','Xbox Series X','Microsoft'),
-('3','PC','Razni');
+(1,'PlayStation 5', 'Sony'),
+(1,'Xbox Series X','Microsoft'),
+(1,'PC','Razni');
 -- Unos razvijaca
 INSERT INTO Razvijac (Sifra_igre,Naziv, Sjedište) 
 VALUES 
-('1','CD Projekt Red', 'Poljska')
+(1,'CD Projekt Red', 'Poljska')
 -- Unos izdavaca
 INSERT INTO  Izdavac (Sifra_igre,Naziv,Sjedište)
 VALUES 
-('1','CD Projekt Red', 'Poljska')
+(1,'CD Projekt Red', 'Poljska')
+
