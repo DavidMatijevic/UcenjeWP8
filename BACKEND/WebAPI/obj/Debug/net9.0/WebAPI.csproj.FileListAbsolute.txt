@@ -28,3 +28,6 @@ C:\Users\micro\Documents\GitHub\UcenjeWP8\BACKEND\WebAPI\obj\Debug\net9.0\refint
 C:\Users\micro\Documents\GitHub\UcenjeWP8\BACKEND\WebAPI\obj\Debug\net9.0\WebAPI.pdb
 C:\Users\micro\Documents\GitHub\UcenjeWP8\BACKEND\WebAPI\obj\Debug\net9.0\WebAPI.genruntimeconfig.cache
 C:\Users\micro\Documents\GitHub\UcenjeWP8\BACKEND\WebAPI\obj\Debug\net9.0\ref\WebAPI.dll
+C:\Users\micro\Documents\GitHub\UcenjeWP8\BACKEND\WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\micro\Documents\GitHub\UcenjeWP8\BACKEND\WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\micro\Documents\GitHub\UcenjeWP8\BACKEND\WebAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
