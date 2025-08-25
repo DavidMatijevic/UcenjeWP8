@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "8Q1+0HSXilSMMWh+/rQbJQkrt98NCP6/8JRLhqOwKZg=",
+  "Source": "EdunovaApp",
+  "BasePath": "_content/EdunovaApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EdunovaApp\\wwwroot",
+      "Source": "EdunovaApp",
+      "ContentRoot": "D:\\WP1\\CSHARP\\EdunovaWebAPI\\EdunovaApp\\wwwroot\\",
+      "BasePath": "_content/EdunovaApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\WP1\\CSHARP\\EdunovaWebAPI\\EdunovaApp\\wwwroot\\index.html",
+      "SourceId": "EdunovaApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WP1\\CSHARP\\EdunovaWebAPI\\EdunovaApp\\wwwroot\\",
+      "BasePath": "_content/EdunovaApp",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
